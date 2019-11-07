@@ -3,4 +3,8 @@
 *.iml
 /.idea
 
+# Ignore everything inside images
 Figure/images/*
+
+# But still keep the folder
+!Figure/images/.gitkeep 
