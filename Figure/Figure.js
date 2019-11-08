@@ -6,8 +6,8 @@ import Images from './Images';
 const Figure = (props) => {
   const img_styles = [props.sizes];
 
-  if(props.customStyle != undefined) {
-    img_styles.push(props.customStyle)
+  if(props.custom_style != undefined) {
+    img_styles.push(props.custom_style)
   }
 
   return <Image style={img_styles} source={Images[props.img_key]}/>
@@ -19,7 +19,7 @@ Figure.propTypes = {
     width: PropTypes.any.isRequired,
     height: PropTypes.any.isRequired,
   }),
-  customStyle: PropTypes.object
+  custom_style: PropTypes.object
 }
 
 export default Figure;
